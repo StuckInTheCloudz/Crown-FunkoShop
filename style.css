@@ -1,0 +1,398 @@
+ul .navbar{
+  background: black;
+  border: 50px;
+  border-color: black;
+  
+  
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 15px 15px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  font-size: 25px;
+}
+
+/* Fix this selector - it should be just .dropdown not ul.dropdown */
+ul li .dropdown {
+  width: 100%;
+  border: black;
+  border-width: 20px;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  text-align: left;
+  border:black;
+    box-shadow: 50px 50px 50;
+    border-top: #212529;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 100px;
+}
+
+ul li .dropdown li {
+  display: block;
+  width: 100%;
+  background-color: black;
+}
+
+ul li a:hover {
+  border: black;
+  border: #ffffff;
+    box-shadow: 50px 50px 5555px;
+    border-top: #212529;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 25px;
+     background-color: rgb(158, 154, 154); /* Light blue color - change to your preferred color */
+  
+}
+
+/* Fix this selector - it should match .dropdown not ul.dropdown */
+ul li:hover .dropdown {
+  display: block;
+  border: #ffffff;
+}
+
+
+
+
+
+-------- body ---------
+
+
+-------- home page featured ----------
+ul .container{
+    display: grid;
+  padding: 40px 40px;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  font-size: 25px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  
+}
+
+
+.container {
+  display: grid;
+  padding: 40px 40px;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  font-size: 25px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.flagshipcontainer{
+display: flex;
+  padding: 50px 50px;
+  color: black;
+  text-decoration: firebrick;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    padding: 50px 50px;
+    font-size: 20px
+}
+
+.item {
+  border: 1px solid white;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+body {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #ffffff; /* Optional: adds a white background */
+
+}
+
+.btn {
+    display: inline-block;
+    background-color: #212529;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 6000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
+    border: 2px solid #212529;
+    padding: 25px 50px;
+    text-align: center;
+    position: relative;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #212529;
+    transform: translateY(-3px);
+}
+
+.hero {
+    color: black;
+    padding: 80px 50px;
+    text-align: center;  /* This centers all text and inline elements in the hero section */
+    position: relative;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    background-image: url("https://www.pngmart.com/files/23/Crown-Logo-PNG-HD.png");
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.welcome-text{
+    font-size: 25px;
+    position: relative;
+    font-weight: bold;
+    margin: 30px 30px;
+    box-shadow: 20px 10px 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+}
+.home-page{
+    border: #ffffff;
+    box-shadow: 50px 50px 5555px;
+    border-top: #212529;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 100px;
+     background-color: rgb(158, 154, 154); /* Light blue color - change to your preferred color */
+  padding: 5px 10px; /* Optional: adds some space around the text */
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #9f9c9c; /* Optional: adds a white background */
+
+}
+
+
+
+
+.home-page {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.home-page h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: #b4b2b2;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.home-page::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 100px;
+  background-image: 
+    conic-gradient(from 150deg at 10% 20%, transparent 30deg, #333 30deg, #333 60deg, transparent 60deg),
+    conic-gradient(from 150deg at 20% 20%, transparent 30deg, #333 30deg, #333 60deg, transparent 60deg),
+    conic-gradient(from 150deg at 40% 20%, transparent 30deg, #333 30deg, #333 60deg, transparent 60deg),
+    conic-gradient(from 3000deg at 45% 20%, transparent 30deg, #333 30deg, #333 60deg, transparent 60deg),
+    conic-gradient(from 3000deg at 63.5% 20%, transparent 30deg, #333 30deg, #333 60deg, transparent 60deg),
+    conic-gradient(from 3000deg at 73.5% 20%, transparent 30deg, #333 30deg, #333 60deg, transparent 60deg);
+
+  background-size: 120% 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.home-page::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  height: 30px;
+  background-color: #333;
+  border-radius: 50% / 100% 100% 0 0;
+  z-index: 1;
+}
+
+/* Make sure your CSS file is properly linked in your HTML */
+
+/*------ COLLECTIONS ----------*/
+
+.familycollection{
+display: flex;
+  padding: 50px 50px;
+  color: black;
+  text-decoration: firebrick;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
+}
+
+
+
+
+
+
+
+/* CART CART CART CART CSS */
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar li {
+    padding: 15px 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart-icon {
+    margin-left: auto;
+    position: relative;
+    padding-right: 30px;
+}
+
+.cart-icon img {
+    vertical-align: middle;
+}
+
+/* Cart badge */
+#cart-count {
+    background: white;
+    color: black;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+
+
+.cart-item img {
+  margin-right: 20px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.qty-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.sidenav {
+  height: 100%; /* full height */
+  width: 0; /* start hidden */
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.sidenav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav ul li {
+  padding: 8px 32px;
+  text-align: left;
+}
+
+.sidenav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+
+.sidenav ul li a:hover {
+  background-color: #575757;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Crown Funko Shop | Custom FUNKO Pops made from your pictures!</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+        <nav>
+            <ul>
+                
+                 <div class="logo"><a href="index.html">
+    <img src="https://www.pngmart.com/files/23/Crown-Logo-PNG-HD.png" width = 125px>
+</a></div>
+    <div class = navbar>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Funko1.html">Collections</a>
+            <li><a href="flagship.html">Flagship Models</a>
+                    <ul class="dropdown">
+                    <li><a href="Geo.html">Wannabe</a></li>
+                <li><a href="Sherri.html">Sproutling</a></li>
+                <li><a href="Megan.html">MegaMegu</a></li>
+                <li><a href="Justin.html">Dreamer</a></li>
+                <li><a href="Jasmine.html">Jazz</a></li>
+                    </ul>
+                </li>
+                <li><a href="Funko2.html">About Us</a></li>
+                <li><a href="Funko3.html">Contact Us</a></li>
+                <li class="cart-icon">
+            <a href="ShoppingCart/cart.html">
+                <img src="Images/shoppingcart.png" alt="Cart" width="35">
+                <span id="cart-count">0</span>
+            </a>
+        </li>
+            </ul>
+        </nav>
+    </div>
+<h1>---------------------------------------- The Jazz -----------------------------------------</h1>
+    
+<div class = "flagshipcontainer"> 
+        <div class = "item"> <img src="/Images/jasFUNKO.png" width="250px"></img> </div>
+        
+        <div class = "item"> <h1>Story of the Jazz</h1><h3>The Jazz Funko POP is inspired by my cousin who used to play jazz Piano.
+            Honestly idk why she quit she was lowkey fire with it too. I ALWAYS catch her listening to jazz
+            or slow blues whilst she studies. Think of the movie Whiplas and the pianist in that movie. Okay im lowkey glazing
+            but like she used to play Piano lmao. BUT FIRE MUSIC TASTE!!! 
+
+        <h1>Inspiration Picture</h1>
+        <div class = "item"><img src="Images/jasinspo.png" width = 250px></div>
+    </div>
+    <button class="btn checkout-btn" onclick="addToCart('Jazz Funko', 19.99, '/Images/jasFUNKO.png')">Add to Cart</button>
+   
+<script src="cart.js">
+function addToCart(name, price, image) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existing = cart.find(item => item.name === name);
+
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        cart.push({ name, price, image, quantity: 1 });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(`${name} added to cart!`);
+
+}
+</script>
+
+</body>
+</html>
+

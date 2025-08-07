@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Crown Funko Shop | Custom FUNKO Pops made from your pictures!</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+        <nav>
+            <ul>
+                
+                 <div class="logo"><a href="index.html">
+    <img src="https://www.pngmart.com/files/23/Crown-Logo-PNG-HD.png" width = 125px>
+</a></div>
+    <div class = navbar>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Funko1.html">Collections</a>
+            <li><a href="flagship.html">Flagship Models</a>
+                    <ul class="dropdown">
+                    <li><a href="Geo.html">Wannabe</a></li>
+                <li><a href="Sherri.html">Sproutling</a></li>
+                <li><a href="Megan.html">MegaMegu</a></li>
+                <li><a href="Justin.html">Dreamer</a></li>
+                <li><a href="Jasmine.html">Jazz</a></li>
+                    </ul>
+                </li>
+                <li><a href="Funko2.html">About Us</a></li>
+                <li><a href="Funko3.html">Contact Us</a></li>
+                <li class="cart-icon">
+            <a href="ShoppingCart/cart.html">
+                <img src="Images/shoppingcart.png" alt="Cart" width="35">
+                <span id="cart-count">0</span>
+            </a>
+        </li>
+            </ul>
+        </nav>
+    </div>
+<h1>---------------------------------------- The Dreamer -----------------------------------------</h1>
+    <div class = "flagshipcontainer"> 
+        <div class = "item"> <img src="/Images/JustinFUNKO.png" width="250px"></img> </div>
+        
+        <div class = "item"> <h1>Story of the Dreamer</h1><h3>The Dreamer modeled after my eldest Cousin.
+            The Dreamer gets his name from how he always has a blunt and emotionless expression sometimes
+            almost as if he was daydreaming in the middle of the conversation. One second I'm talking 
+            the next he's texting his girlfriend or he fell asleep. None the less Cousin#1 got them dreams so keep following your dreams.
+        </h3>
+
+        <h1>Inspiration Picture</h1>
+        <div class = "item"><img src="/Images/justininspo.jpg" width = 250px></div>
+    </div>
+    <button class="btn checkout-btn" onclick="addToCart('Dreamer Funko', 19.99, '/Images/JustinFUNKO.png')">Add to Cart</button>
+   
+<script src="cart.js">
+function addToCart(name, price, image) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existing = cart.find(item => item.name === name);
+
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        cart.push({ name, price, image, quantity: 1 });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(`${name} added to cart!`);
+
+}
+</script>
+
+</body>
+</html>
+

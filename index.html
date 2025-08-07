@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Crown Funko Shop | Custom FUNKO Pops made from your pictures!</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    
+        <nav>
+  <div id="mySidenav" class="sidenav" style="width: 0;">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Funko1.html">Collections</a></li>
+      <li><a href="flagship.html">Flagship Models</a>
+        <ul class="dropdown">
+          <li><a href="Geo.html">Wannabe</a></li>
+          <li><a href="Sherri.html">Sproutling</a></li>
+          <li><a href="Megan.html">MegaMegu</a></li>
+          <li><a href="Justin.html">Dreamer</a></li>
+          <li><a href="Jasmine.html">Jazz</a></li>
+        </ul>
+      </li>
+      <li><a href="Funko2.html">About Us</a></li>
+      <li><a href="Funko3.html">Contact Us</a></li>
+      <li><a href="ShoppingCart/cart.html">Your Cart</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Crown logo (triggers the nav toggle) -->
+<div class="logo" onclick="toggleNav()">
+    <img src="https://www.pngmart.com/files/23/Crown-Logo-PNG-HD.png" width="125px" style="cursor: pointer;">
+</div>
+
+<section class="hero">
+            <div class="crown-bg"></div>
+            <h1 class="home-page">Welcome to Crown</h1>
+            <p class="welcome-text">
+            </p>
+            
+            <a href="Funko1.html" class="btn">Explore Collection</a>
+        </section>
+        
+<script>
+function toggleNav() {
+    const sideNav = document.getElementById("mySidenav");
+    if (sideNav.style.width === "250px") {
+        sideNav.style.width = "0";
+    } else {
+        sideNav.style.width = "250px";
+    }
+}
+</script>
+
+</body>
+</html>

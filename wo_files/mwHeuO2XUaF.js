@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("IGDChatTabMsys.react",["I64","IGDChatTabSingleTabContainer.react","IGDChatTabsThreadContainer.react","react"],(function(a,b,c,d,e,f,g){"use strict";var h,i,j=h||d("react");function a(a){a=a.threadKey;return j.jsx(c("IGDChatTabSingleTabContainer.react"),{"data-testid":void 0,children:j.jsx(c("IGDChatTabsThreadContainer.react"),{threadKey:(i||(i=d("I64"))).of_string(a)})})}a.displayName=a.name+" [from "+f.id+"]";g["default"]=a}),98);
